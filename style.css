@@ -1,0 +1,85 @@
+html, body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: "IBM Plex Sans";
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.Container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Wallpaper {
+    width: 80%;
+    height: 80%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    color: white;
+    border: 2px solid black;
+}
+
+.ButtonContainer {
+    width: 12rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    display: none;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    color: white;
+    border-style: none;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    border: 2px solid black;
+    background-color: hsla(242,100%,70%,1);
+    font-family: "IBM Plex Sans";
+    font-size: 1rem;
+    touch-action: manipulation;
+}
+
+button:active {
+    background-color: rgb(34, 33, 84);
+}
+
+@media only screen and (max-width: 1000px) {
+    .Wallpaper {
+        width: 36rem;
+        height: 80rem;
+        border-radius: 5rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+
+    Button {
+        font-size: 3rem;
+        font-weight: bold;
+        border-radius: 10rem;
+        padding: 2rem;
+    }
+
+    .ButtonContainer {
+        padding: 2rem;
+        width: 36rem;
+    }
+}
